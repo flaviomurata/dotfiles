@@ -1,12 +1,8 @@
 return {
-  {
-    "craftzdog/solarized-osaka.nvim",
-    lazy = true,
-    priority = 1000,
-    opts = function()
-      return {
-        transparent = true,
-      }
-    end,
-  },
+  'sainnhe/everforest',
+  priority = 1000,
+  config = function()
+    vim.g.everforest_diagnostic_line_highlight = 1
+    vim.cmd [[colorscheme everforest]]
+  end,
 }
