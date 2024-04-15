@@ -24,6 +24,8 @@ return {
           'prisma',
           'markdown',
           'markdown_inline',
+          'fish',
+          'gitignore',
         },
 
         sync_install = false,
