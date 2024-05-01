@@ -1,8 +1,20 @@
 return {
-  'sainnhe/everforest',
+  'rose-pine/neovim',
+  name = 'rose-pine',
   priority = 1000,
   config = function()
-    vim.g.everforest_diagnostic_line_highlight = 1
-    vim.cmd [[colorscheme everforest]]
+    require('rose-pine').setup {
+      variant = 'main',
+
+      styles = {
+        bold = true,
+        italic = true,
+        transpareny = true,
+      },
+    }
+
+    -- Load the colorscheme
+    vim.cmd [[colorscheme rose-pine]]
+    vim.cmd [[set background=dark]]
   end,
 }
